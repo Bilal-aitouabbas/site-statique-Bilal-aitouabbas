@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* HEADER  */
+
+.hidden_below {
+  display: visible;
+}
+
+.navbar {
+  background-color: #152237;
+  /* overflow: hidden;  */
+  width: 100vw;
+  height: 9vh;
+  display: flex;
+}
+
+.navb {
+  display: flex;
+
+  justify-content: space-between;
+  width: 100vw;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  p {
+    color: white;
+    font-size: 1em;
+    align-content: center;
+    margin-left: 5vw;
+  }
+
+  img {
+    height: auto;
+    align-self: center;
+    margin-left: 1vw;
+    width: 4%;
+  }
+
+  .searchbox {
+    align-self: center;
+
+    placeholder {
+      margin-left: 1vw;
+    }
+  }
+}
+
+#maRecherche {
+  background-color: #152237;
+  color: white;
+  height: 4vh;
+  width: 25vw;
+  align-self: center;
+  border: white 1px solid;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-right: 6vw;
+  padding: 1em;
+}
+
+.btnnav {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  margin-right: 3%;
+  margin-right: 10%;
+  button {
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+  }
+
+  #btnavz {
+    background: #44dd8a;
+    background: linear-gradient(
+      90deg,
+      rgba(68, 221, 138, 1) 19%,
+      rgba(21, 183, 226, 1) 100%
+    );
+  }
+}
+
+.mainp {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 64vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      90deg,
+      rgba(68, 221, 138, 0.8) 19%,
+      rgba(21, 183, 226, 0.8) 100%
+    ),
+    url("bg-header.png");
+  background-size: cover;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  button {
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+  }
+
+  div {
+    align-content: center;
+    height: 64vh;
+    width: 100vw;
+  }
+}
+
+#logop {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .hidden_below {
+    display: none;
+  }
+
+  #logop {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  #logoK {
+    height: auto;
+    width: 84px;
+  }
+
+  .mainpp {
+    width: 26vw;
+    height: 5vh;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+}
+
+/* END MAIN/HEADER  */
+
+/* SECTION POPULAIRE */
+#sectionpop {
+  margin-bottom: 3%;
+  margin-right: 1%;
+}
+#formationpop {
+  padding: 3%;
+  margin-left: 2%;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.populaire {
+  display: flex;
+  margin-bottom: 3%;
+  justify-content: space-evenly;
+  gap: 90px;
+
+  #stars {
+    width: 45%;
+    height: auto;
+    margin-right: 55%;
+  }
+}
+
+.card {
+  width: 15%;
+  justify-content: space-evenly;
+  position: relative;
+
+  p,
+  img,
+  h3 {
+    padding-bottom: 2%;
+  }
+}
+
+#prix {
+  position: absolute;
+  top: 50%;
+  border: 0.1rem;
+  border-radius: 10px;
+  right: 0%;
+  background-color: black;
+  color: white;
+  padding: 2%;
+  font-weight: bold;
+
+  span {
+    text-decoration: line-through;
+    font-size: 0.7rem;
+  }
+}
+
+.margcard {
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.recente {
+ display: flex;
+    justify-content: space-evenly;
+    gap: 0%;
+    margin-bottom: 3%;
+}
+
+.sectf {
+  justify-self: center;
+  padding: 0.5%;
+  border: solid;
+  border-radius: 6px;
+  background-color: black;
+  width: 12%;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/* END SECTION POPULAIRE */
+
+/* SECTION RECENTE */
+#sectionrecente {
+  background-color: #152237;
+  color: white;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+}
+#formationrec {
+  padding: 3%;
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 2em;
+}
+.recente {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0%;
+  margin-bottom: 3%;
+
+  #stars {
+    width: 45%;
+    height: auto;
+  }
+}
+
+.sectf2 {
+  justify-self: center;
+  padding: 0.5%;
+  border: solid;
+  border-radius: 6px;
+  width: 12%;
+  text-align: center;
+  background-color: white;
+  color: #152237;
+}
+/* END SECTION RECENTE */
+/* FOOTER  */
