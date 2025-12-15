@@ -1,198 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="navb">
-                <img id="logoK" src="logo.png" alt="">
-                <p class="hidden_below">Les formations</p>
-                <div class="searchbox hidden_below">
-                    <input type="text" id="maRecherche" placeholder="Rechercher" class="hidden_below" />
-                </div>
-                <div class="btnnav">
-                    <button type="button" class="hidden_below">Connexion</button>
-                    <button type="button" id="btnavz" class="hidden_below">Inscription</button>
-                    <img id="logop" src="iconavP.png" alt="">
-                </div>
+      <nav class="navbar">
+        <div class="navb">
+          <img id="logoK" src="logo.png" alt="" />
+          <p class="hidden_below">Les formations</p>
 
-            </div>
-        </nav>
+          <div class="searchbox hidden_below">
+            <input type="text" id="maRecherche" placeholder="Rechercher" />
+          </div>
+
+          <div class="btnnav">
+            <button class="hidden_below">Connexion</button>
+            <button id="btnavz" class="hidden_below">Inscription</button>
+            <img id="logop" src="iconavP.png" alt="" />
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="mainp">
-        <div>
-            <h1>KLIVIO, L’ALLIÉ DE VOTRE PROGRESSION</h1>
-            <h4>LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h4>
-            <button class="mainpp" type="button">En savoir plus</button>
-        </div>
+      <div class="hero">
+        <h1>KLIVIO, L’ALLIÉ DE VOTRE PROGRESSION</h1>
+        <h4>LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h4>
+        <button class="mainpp" type="button">En savoir plus</button>
+      </div>
     </main>
-    
+
+    <!-- SECTION POPULAIRE -->
     <section id="sectionpop">
-        <h2 id="formationpop">Les formations populaires</h2>
-    <div class="populaire">
+      <h2 id="formationpop">Les formations populaires</h2>
+
+      <div class="populaire">
+        <div class="card">
+          <img src="img-course.png" alt="" />
+          <div class="prix">
+            <h3>15,99€</h3>
+            <span>60€</span>
+          </div>
+
+          <div class="margcard">
+            <h3>Parler en public</h3>
+            <p>Sonia Lefèvre | Coach prise de parole</p>
+            <img class="stars" src="stars.png" alt="" />
+            <p>Gagnez en aisance et captez votre auditoire</p>
+          </div>
+        </div>
 
         <div class="card">
-            <div cardolar>
-                <img src="img-course.png" alt="">
-                <div id="prix" h3>15,99€</h3> <span>60€</span>
-                </div>
-                 <div class="margcard">
-                <h3>Parler en public</h3>
-                <p>Sonia Lefèvre | Coach prise de parole</p>
+          <img src="img-course.png" alt="" />
+          <div class="prix">
+            <h3>15,99€</h3>
+            <span>60€</span>
+          </div>
 
-                <img id="stars" src="stars.png" alt="">
-                <p>Gagnez en aisance et captez votre auditoire</p>
-            </div>
-            </div>
-           
+          <div class="margcard">
+            <h3>Gérer le stress</h3>
+            <p>Lucie Garnier | Formatrice</p>
+            <img class="stars" src="stars.png" alt="" />
+            <p>Apprenez à rester serein face aux défis</p>
+          </div>
         </div>
 
         <div class="card">
-            <div cardolar>
-                <img src="img-course.png" alt="">
-                <div id="prix" h3>15,99€</h3> <span>60€</span>
-                </div>
-                  <div class="margcard">
-                <h3>Gérer le stress</h3>
-                <p>Lucie Garnier | Formatrice</p>
-                <img id="stars" src="starstransparent.png" alt="">
-                <p>Apprenez à rester serein face aux défis</p>
-            </div>
-            </div>
-          
+          <img src="img-course.png" alt="" />
+          <div class="prix">
+            <h3>15,99€</h3>
+            <span>60€</span>
+          </div>
+
+          <div class="margcard">
+            <h3>Travailler en équipe</h3>
+            <p>David Moreau | Expert</p>
+            <img class="stars" src="stars.png" alt="" />
+            <p>Collaborez efficacement, même à distance</p>
+          </div>
         </div>
+
         <div class="card">
-            <div cardolar>
-                <img src="img-course.png" alt="">
-                <div id="prix" h3>15,99€</h3> <span>60€</span>
-                </div>
-                <div class="margcard">
-                <h3>Travailler en équipe</h3>
-                <p>David Moreau | Expert</p>
-                <img id="stars" src="stars.png" alt="">
-                <p>Collaborez efficacement, même à distance</p>
-            </div>
-            </div>
-            
-        </div>
-        <div class="card">
-            <div cardolar>
-                <img src="img-course.png" alt="">
-                <div id="prix" h3>15,99€</h3> <span>60€</span>
-                </div>
-                  <div class="margcard">
-                <h3>Gérer son temps</h3>
-                <p>Sonia Lefèvre | Coach prise de parole</p>
-                <img id="stars" src="starstransparent.png" alt="">
-                <p>Optimisez vos journées et gagnez en efficacité</p>
-            </div>
-            </div>
-          
-        </div>
-</div>
-<div class="sectf">
-    
-   <a href="#formation">Voir plus de formations</a>
+          <img src="img-course.png" alt="" />
+          <div class="prix">
+            <h3>15,99€</h3>
+            <span>60€</span>
+          </div>
 
-</div>
-</section>
-
-   <section id="sectionrecente">
-    <h2 id="formationrec">Les formations récentes</h2>
-    <div id="formation" class="recente">
-       <div class="card">
-            <div cardolar>
-                <img src="img-course.png" alt="">
-                <div id="prix" h3>15,99€</h3> <span>60€</span>
-                </div>
-                 <div class="margcard">
-                <h3>Mieux communiquer</h3>
-                <p>Julien Martel | Coach en comm.</p>
-
-                <img id="stars" src="starsfive.png" alt="">
-                <p>Améliorez vos échanges et votre impact relationnel</p>
-            </div>
-            </div>
-           
+          <div class="margcard">
+            <h3>Gérer son temps</h3>
+            <p>Claire Dumas | Coach organisation</p>
+            <img class="stars" src="stars.png" alt="" />
+            <p>Optimisez vos journées et gagnez en efficacité</p>
+          </div>
         </div>
-         <div class="card">
-            <div cardolar>
-                <img src="img-course.png" alt="">
-                <div id="prix" h3>15,99€</h3> <span>60€</span>
-                </div>
-                <div class="margcard">
-                <h3>Maîtriser ses émotions</h3>
-                <p>Amel Benali | Psy. du travail</p>
+      </div>
 
-                <img id="stars" src="starsfive.png" alt="">
-                <p>Développez calme et intelligence émotionnelle</p>
-            </div>
-            </div>
-            
-        </div>
-        <div class="card">
-            <div cardolar>
-                <img src="img-course.png" alt="">
-                <div id="prix" h3>15,99€</h3> <span>60€</span>
-                </div>
-                 <div class="margcard">
-                <h3>Résoudre les problèmes</h3>
-                <p>Thomas Rivière | Expert</p>
-                <img id="stars" src="starsfour.png" alt="">
-                <p>Analysez, décidez et trouvez des solutions durables</p>
-            </div>
-            </div>
-           
-        </div>
-        <div class="card">
-            <div cardolar>
-                <img src="img-course.png" alt="">
-                <div id="prix" h3>15,99€</h3> <span>60€</span>
-                </div>
-                 <div class="margcard">
-                <h3>Leadership positif</h3>
-                <p>Marc Nguyen | Consultant</p>
-                <img id="stars" src="starsfour.png" alt="">
-                <p>Inspirez, motivez et fédérez votre équipe</p>
-            </div>
-            </div>
-           
-        </div>
-    </div>
-    <div class="sectf2 ">
-    
-   <a href="#formation">Voir plus de formations</a>
-
-</div>
+      <div class="sectf"><a href="#">Voir plus de formations</a></div>
     </section>
 
-    <section class="avisclient">
-        <h2>Avis clients</h2>
+    <!-- SECTION RECENTE -->
+
+    <section id="sectionrec">
+      <h2 id="formationpop">Les formations récentes</h2>
+
+      <div class="populaire">
+        <div class="card">
+          <img src="img-course.png" alt="" />
+          <div class="prix2">
+            <h3>15,99€</h3>
+            <span>60€</span>
+          </div>
+
+          <div class="margcard">
+            <h3>Mieux communiquer</h3>
+            <p>Julien Martel | Coach en comm.</p>
+            <img class="stars" src="starsfive.png" alt="" />
+            <p>Améliorez vos échanges et votre impact relationnel</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img-course.png" alt="" />
+          <div class="prix2">
+            <h3>15,99€</h3>
+            <span>60€</span>
+          </div>
+
+          <div class="margcard">
+            <h3>Maîtriser ses émotions</h3>
+            <p>Amel Benali | Psy. du travail</p>
+            <img class="stars" src="starsfive.png" alt="" />
+            <p>Développez calme et intelligence émotionnelle</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img-course.png" alt="" />
+          <div class="prix2">
+            <h3>15,99€</h3>
+            <span>60€</span>
+          </div>
+
+          <div class="margcard">
+            <h3>Résoudre les problèmes</h3>
+            <p>Thomas Rivière | Expert</p>
+            <img class="stars" src="starsfour.png" alt="" />
+            <p>Analysez, décidez et trouvez des solutions durables</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img-course.png" alt="" />
+          <div class="prix2">
+            <h3>15,99€</h3>
+            <span>60€</span>
+          </div>
+
+          <div class="margcard">
+            <h3>Leadership positif</h3>
+            <p>Marc Nguyen | Consultant</p>
+            <img class="stars" src="starsfour.png" />
+            <p>Inspirez, motivez et fédérez votre équipe</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectf2"><a href="#">Voir plus de formations</a></div>
+    </section>
+
+    <!-- SECTION AVIS CLIENT -->
+
+    <section>
+      <h2 id="avis">AVIS CLIENT</h2>
+      <div class="client">
+        <div class="clientsize">
+          <img id="clientsz" src="juliette.png" alt="" />
+          <div>
+            <img class="stars" src="stars.png" alt="" />
+          </div>
+          <p>
+            J’ai trouvé le parcours très bien structuré : vidéos courtes,
+            quizzes pertinents et projets pratiques qui m’ont permis d’appliquer
+            immédiatement les notions. L’interface est claire et la progression
+            est motivante — parfait pour se former en autonomie.
+          </p>
+        </div>
+        <div class="clientsize">
+          <img id="clientsz" src="camille.png" alt="" />
+          <div>
+            <img class="stars" src="stars.png" alt="" />
+          </div>
+          <p>
+            J’ai trouvé le parcours très bien structuré : vidéos courtes,
+            quizzes pertinents et projets pratiques qui m’ont permis d’appliquer
+            immédiatement les notions. L’interface est claire et la progression
+            est motivante — parfait pour se former en autonomie.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION REVERSE -->
+
+    <section class="mediaqsr">
+      <div class="row">
+        <div class="itemlist">
+          <div id="trickavantage">
+            <h2>Les avantages Klivio</h2>
+          </div>
+          <div class="item">
+            <img src="arrow-up-right.png" alt="" />
+            <p>Suivi de sa progression</p>
+          </div>
+          <div class="item">
+            <img src="edit-01.png" alt="" />
+            <p>Exercices et QCM pour la mise en pratique</p>
+          </div>
+          <div class="item">
+            <img src="download-02.png" alt="" />
+            <p>Possibilité de télécharger/imprimer les formations</p>
+          </div>
+          <div id="itemfix" class="item">
+            <img src="star-02.png" alt="" />
+            <p>Contenu qualitatif et vérifié</p>
+          </div>
+          <div class="item">
+            <img src="clock-backward.png" alt="" />
+            <p>Suivi en autonomie, 24h/24, 7j/7</p>
+          </div>
+          <div class="item">
+            <img src="annotation-typing.png" alt="" />
+            <p>
+              Espaces d’échanges dédiés pour poser ses questions sur les
+              formations
+            </p>
+          </div>
+        </div>
         <div>
-            <div></div>
-            <div></div>
+          <img id="avantage" src="avantages.png" alt="" />
         </div>
+      </div>
+      <div class="row reverse">
+        <div class="itemlist">
+          <div id="trickavantage">
+            <h2>Créez vos formations avec Klivio</h2>
+          </div>
+          <div class="item">
+            <img src="coin-hand.png" alt="" />
+            <p>Commission unique, au pourcentage sur les ventes</p>
+          </div>
+          <div class="item">
+            <img src="heart.png" alt="" />
+            <p>Mise en avant sur la plateforme</p>
+          </div>
+          <div class="item">
+            <img src="pencil-01.png" alt="" />
+            <p>Contrôle total sur le cours : contenu, prix</p>
+          </div>
+          <div class="item">
+            <img src="settings.png" alt="" />
+            <p>
+              Fonctionnalités avancées : espace commentaires, possibilité de
+              créer des QCM, exercices, vidéos, téléchargement en PDF, suivi des
+              statistiques des ventes, gestion de codes promos, gestion de la
+              facturation, etc
+            </p>
+          </div>
+          <div class="item">
+            <img src="user-profile-square.png" alt="" />
+            <p>
+              Le professeur reste 100% propriétaire de sa formation et conserve
+              tous ses droits d’auteur
+            </p>
+          </div>
+        </div>
+        <div>
+          <img id="become" src="become-author.png" alt="" />
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="itemlist2">
+          <div id="trickavantage">
+            <h2>À propos de Klivio</h2>
+          </div>
+          <div class="item2">
+            <p>
+              Chez Klivio, nous défendons des valeurs fondamentales qui
+              définissent notre approche éducative. Nous nous engageons à
+              assurer une rémunération équitable pour les créateurs de contenu,
+              reconnaissant la qualité de leur travail. <br />
+              <br />
+              Favorisant l'autonomie d'apprentissage, notre plateforme offre la
+              flexibilité écessaire pour explorer divers sujets. La transparence
+              est au cœur de notre démarche, garantissant une clarté totale sur
+              les formations que les instructeurs proposent. Ensemble, ces
+              valeurs forment le socle d'une ducation enrichissante et
+              équitable, guidant notre mission d'offrir des pportunités
+              d'apprentissage de qualité
+            </p>
+          </div>
+        </div>
+        <div id="avantag">
+          <img id="avantage" src="kliviobig.png" alt="" />
+        </div>
+      </div>
     </section>
-    <section>
-        <div class="avantage"></div>
 
-        <div class="formation"></div>
+    <!-- FORMULAIRE-->
 
-        <div class="apropos" </div>
-
+    <section id="secontact">
+      <h2>NOUS CONTACTER</h2>
+      <span class="barre"></span>
+      <form action="/ma-page-de-traitement" method="post">
+        <div class="formu">
+          <div class="formul">
+            <input type="text" id="name" placeholder="name" />
+          </div>
+          <div class="formul">
+            <input type="email" id="mail" placeholder="email" />
+          </div>
+        </div>
+        <div class="area">
+          <textarea id="msg" placeholder="Votre message"></textarea>
+        </div>
+        <div class="area">
+          <button class="envoyer" type="button">Envoyer</button>
+        </div>
+      </form>
     </section>
-    <section>
+    <!-- FOOTER-->
+    <footer>
+      <section id="footer">
+        <span class="barrelinear"></span>
+        <div class="foot">
+          <div>
+            <img src="kliviomid.png" alt="" />
+          </div>
+          <div class="mentioncoord">
+            <div class="Coordonnées">
+              <h5>Mentions légales</h5>
 
-    </section>
-    <footer></footer>
-</body>
-
+              <p>CGU</p>
+              <p>CGV</p>
+              <p>FAQ</p>
+              <p>Contact</p>
+            </div>
+            <div class="Coordonnées">
+              <h5 id="coh5">Coordonnées</h5>
+              <div class="itemc">
+                <img src="marker-02.png" alt="" />
+                <p>1 place république,<br> 75003 Paris</p>
+              </div>
+              <div class="itemc">
+                <img src="phone.png" alt="" />
+                <p>01.02.03.04.05</p>
+              </div>
+              <div class="itemc">
+                <img src="mail-01.png" alt="" />
+                <p>contact@klivio.fr</p>
+              </div>
+            </div>
+          </div>
+          <div class="buttonf">
+            <button class="hidden_below">Connexion</button>
+            <button id="btnavz" class="hidden_below">Inscription</button>
+          </div>
+        </div>
+        <span class="barre"></span>
+        <div class="basfooter">
+          <div>
+            <p>© Klivio - 2025</p>
+          </div>
+          <div class="suiveznous">
+            <p>Suivez - nous</p>
+            <img src="SocialIcons.png" alt="" />
+            <img src="SocialIcons2.png" alt="" />
+            <img src="SocialIcons3.png" alt="" />
+            <img src="SocialIcons4.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
