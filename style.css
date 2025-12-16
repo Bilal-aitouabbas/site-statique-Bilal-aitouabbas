@@ -46,6 +46,7 @@
   height: 40px;
   border-radius: 6px;
   margin-left: 20px;
+  border: 0;
 }
 
 #btnavz {
@@ -113,10 +114,6 @@
   position: relative;
 }
 
-.card img {
-  border-radius: 8px;
-}
-
 .prix {
   position: absolute;
   background: black;
@@ -126,7 +123,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  bottom: 155px;
+  bottom: 40%;
   left: 175px;
   border-radius: 93px;
 }
@@ -273,6 +270,12 @@
   height: auto;
   padding: 76px 87px 78px 101px;
 }
+.backgr {
+  background-color: #44dd8a;
+}
+#trickavantage2 {
+  display: none;
+}
 
 .itemlist2 {
   align-content: center;
@@ -296,7 +299,7 @@
   gap: 61px;
 }
 .item2 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 /* FORMULAIRE */
@@ -347,12 +350,20 @@
   height: 45px;
   border-radius: 6px;
   background-color: #44dd8a;
+  border: 0;
 }
 .barre {
   background-color: #44dd8a;
   height: 2px;
+  width: 19%;
+  justify-self: center;
+}
+.barre2 {
+  background-color: #44dd8a;
+  height: 2px;
   width: 85%;
   justify-self: center;
+  margin-bottom: 2%;
 }
 .barrelinear {
   background: linear-gradient(90deg, #44dd8a 19%, #15b7e2 100%);
@@ -372,6 +383,7 @@
     height: 40px;
     border-radius: 6px;
     margin-left: 20px;
+    border: 0;
   }
 }
 
@@ -447,12 +459,50 @@
     margin-left: 30px;
     margin-right: 22px;
   }
+  .mainp {
+    padding: 7%;
+    height: auto;
+    h1 {
+      font-size: 2.4rem;
+    }
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+  #formationpop {
+    margin: 40px 20px 40px 20px;
+    text-align: center;
+  }
+  #avis {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .client {
+    padding-bottom: 0px;
+  }
+  .clientsize p {
+    text-align: left;
+  }
 
   /* ---------- SECTIONS AVANTAGES / REVERSE ---------- */
   .mediaqsr {
     width: 100%;
   }
-
+  #trickavantage {
+    font-size: 1.8rem;
+  }
+  #trickavantage2 {
+    display: block;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 27px;
+  }
+  #hide {
+    display: none;
+  }
+  .item {
+    margin-bottom: 2%;
+  }
   .row,
   .row.reverse,
   .row2 {
@@ -508,6 +558,11 @@
     .barre {
       display: none;
     }
+    h2 {
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: 2.2rem;
+    }
   }
 
   .formu {
@@ -529,6 +584,9 @@
   }
 
   /* ---------- FOOTER ---------- */
+  .barrelinear{
+        height: 18px;
+  }
   .foot {
     flex-direction: column;
     align-items: center;
@@ -549,11 +607,14 @@
   .buttonf {
     display: none;
   }
- 
+
   .itemc {
     text-align: left;
   }
-  .barre{
+  .barre {
+    display: none;
+  }
+  .barre2 {
     display: none;
   }
 }
